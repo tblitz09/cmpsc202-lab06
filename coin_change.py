@@ -33,7 +33,7 @@ def coin_change_dp(coins, amount):
 
 def benchmark():
     
-    target = [10, 20, 30, 40, 50] # Creates input sizes that will be used to test speed at different sizes
+    target = [10, 20, 30, 40, 50]
     naiveList = []
     memoList = [] 
     dpList = []
@@ -45,7 +45,7 @@ def benchmark():
         dpTimes = []
 
 
-        for j in range (0, 10): # Tests each algorithm 10 times per size
+        for j in range (0, 10): 
             start_time = time.perf_counter()
             coin_change_recursive(coins, n)
             end_time = time.perf_counter()
